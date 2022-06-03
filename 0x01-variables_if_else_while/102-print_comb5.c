@@ -17,24 +17,24 @@ int main(void)
 			{
 				for (n = 48; n <= 57; n++)
 				{
-					if (((k + n) > (i + j) && k >= i) || i < k)
+				if (((k + n) > (i + j) && k >= i) || i < k)
+				{
+					putchar(i);
+					putchar(j);
+					putchar(' ');
+					putchar(k);
+					putchar(n);
+					
+					if (i + j + k + n == 227 && i == 57)
 					{
-						putchar(i);
-						putchar(j);
-						putchar(' ');
-						putchar(k);
-						putchar(n);
-
-						if (i + j + k + n == 227 && i == 57)
-						{
-						break;
-						}
-						else
-						{
-						putchar(',');
-						putchar(' ');
-						}
+					break;
 					}
+					else
+					{
+					putchar(',');
+					putchar(' ');
+					}
+				}
 				}
 			}
 		}
