@@ -27,12 +27,12 @@ int main(void)
 
 						if (i + j + k + n == 227 && i == 57)
 						{
-							break;
+						break;
 						}
 						else
 						{
-							putchar(',');
-							putchar(' ');
+						putchar(',');
+						putchar(' ');
 						}
 					}
 				}
