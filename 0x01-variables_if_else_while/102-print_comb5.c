@@ -9,23 +9,30 @@ int main(void)
 {
 	int i, j, k, n;
 
-	for (i = '0'; i <= '9'; i++)
+	for (i = 48; i <= 57; i++)
 	{
-		for (j = '0'; j <= '9'; j++)
+		for (j = 48; j <= 57; j++)
 		{
-			for (k = '0'; k <= '9'; k++)
+			for (k = 48; k <= 57; k++)
 			{
-				for (n = '0'; n <= '9'; n++)
+				for (n = 48; n <= 57; n++)
 				{
-					putchar(i);
-					putchar(j);
-					putchar(' ');
-					putchar(k);
-					putchar(n);
-					if (k != '9' || n != '9')
+					if (((k + n) > (i + j) && k >= i) || i < k)
 					{
-						putchar(',');
+						putchar(i);
+						putchar(j);
 						putchar(' ');
+						putchar(k);
+						putchar(n);
+						if (i + j + k + n == 227 && i == 57)
+						{
+							break;
+						}
+						else
+						{
+							putchar(',');
+							putchar(' ');
+						}
 					}
 				}
 			}
