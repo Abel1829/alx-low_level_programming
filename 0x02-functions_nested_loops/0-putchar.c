@@ -4,7 +4,7 @@
  *
  * Return: Always 0 (Sucess)
  */
-int void(main)
+int main(void)
 {
 	char str[] = "_putchar\n";
 	int i;
