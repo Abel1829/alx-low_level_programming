@@ -12,7 +12,6 @@ int main(void)
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		char c = str[i];
-		
 		_putchar(c);
 	}
 	return (0);
