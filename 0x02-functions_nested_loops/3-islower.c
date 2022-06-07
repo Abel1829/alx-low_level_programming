@@ -2,7 +2,7 @@
 /**
  * _islower - Function that checks for lowercase character.
  *
- *@c - The character is ASCII code.
+ * c - The character is ASCII code.
  *
  * Return: 1 for lowercase character. 0 for the rest.
  */
