@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isdigit - check if it is digit.
+ * _isdigit - check if the integer is digit.
  *
  * @c: used as an integer. 
  *
@@ -9,7 +9,11 @@
 int _isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
+	{
 		return (1);
+	}
 	else
+	{
 		return (0);
+	}
 }
