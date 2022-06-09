@@ -1,6 +1,6 @@
 include "main.h"
 /**
- * main - A function that checks for uppercase character.
+ * _isupper - A function that checks for uppercase character.
  *
  * @c: used us an integer.
  *
