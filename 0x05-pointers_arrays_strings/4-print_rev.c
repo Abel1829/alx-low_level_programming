@@ -10,12 +10,9 @@ void print_rev(char *s)
 {
 	int i;
 
-	for (i = 0; i[s]; i++)
+	for (s[i]; i = 0; i--)
 	{
-		while (i--)
-		{
-			_putchat(i[s]);
-		}
+		_putchat(i[s]);
 	}
 	_putchat('\n');
 }
