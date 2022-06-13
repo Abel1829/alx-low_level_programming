@@ -12,7 +12,7 @@ void print_rev(char *s)
 
 	for (s[i]; i = 0; i--)
 	{
-		_putchat(i[s]);
+		_putchat(s[i]);
 	}
 	_putchat('\n');
 }
