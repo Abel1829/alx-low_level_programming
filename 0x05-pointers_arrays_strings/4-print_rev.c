@@ -10,7 +10,7 @@ void print_rev(char *s)
 {
 	int i;
 
-	for (i[s]; i = 0; i--)
+	for (i = 0; i = i[s]; i--)
 	{
 		_putchat(i[s]);
 	}
