@@ -6,32 +6,33 @@
  *
  * Return: char.
  */
-char *string_toupper(char *a)
+char *cap_string(char *str)
 {
-        int i;
+	int index = 0;
 
-        for (i = 0; a[i]; i++)
-        {
-                while (!(a[i] >= 'a' && a[i] <= 'z'))
-                {
-			i++;
-			if (a[i - 1] == ' ' ||
-		       	    a[i - 1] == '\t' ||
-		            a[i - 1] == '\n' ||
-		            a[i - 1] == ',' ||
-		            a[i - 1] == ';' ||
-		            a[i - 1] == '.' ||
-		            a[i - 1] == '!' ||
-		            a[i - 1] == '?' ||
-		            a[i - 1] == '"' ||
-		            a[i - 1] == '(' ||
-		            a[i - 1] == ')' ||
-		            a[i - 1] == '{' ||
-		            a[i - 1] == '}' ||
-		            i == 0)
-                            a[i] -= 32;
-                }
-        }
-        return (a);
+	while (str[index])
+	{
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
+
+		if (str[index - 1] == ' ' ||
+		    str[index - 1] == '\t' ||
+		    str[index - 1] == '\n' ||
+		    str[index - 1] == ',' ||
+		    str[index - 1] == ';' ||
+		    str[index - 1] == '.' ||
+		    str[index - 1] == '!' ||
+		    str[index - 1] == '?' ||
+		    str[index - 1] == '"' ||
+		    str[index - 1] == '(' ||
+		    str[index - 1] == ')' ||
+		    str[index - 1] == '{' ||
+		    str[index - 1] == '}' ||
+		    index == 0)
+			str[index] -= 32;
+
+		index++;
+	}
+
+	return (str);
 }
-
