@@ -1,11 +1,10 @@
 #include "main.h"
 /**
- * *string_toupper - Afunction that changes lowercase letter of a string to uppercase.
- *
- * @a - the string that will be changed.
- *
- * Return: char.
+ * cap_string - capitalizes all words of a string
+ * @s: input string.
+ * Return: the pointer to dest.
  */
+
 char *cap_string(char *s)
 {
 	int count = 0, i;
